@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-px78
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/rsoaresd_org/spi-demos-jqft-tenant/dotnet-component/devfile-sample-dotnet60-basic-px78@sha256:f5f279f5fadc4e4af810c26e196c70c4b85f38bab81b1e3c0b18abe4825d1d2a
+        name: main
+        resources: {}
+status: {}
